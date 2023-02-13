@@ -7,9 +7,9 @@ puts "[2] Ver todas as receitas"
 puts "[3] Sair"
 
 print "Escolha uma opçaõ: "
-opcao = gets
+opcao = gets.to_i()
 
-while(true)do
+while(opcao != 3)do
     puts "Digite o nome da receita: "
     nome = gets.chomp()
 
@@ -22,3 +22,5 @@ while(true)do
     puts receitas
     puts
 end
+
+puts "|Obrigado por usar o Cookbook, até logo"
