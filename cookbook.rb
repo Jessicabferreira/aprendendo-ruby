@@ -49,4 +49,4 @@ end
 opcao = menu()
 end 
 
-puts "|Obrigado por usar o Cookbook, até logo"
+puts "Obrigado por usar o Cookbook, até logo"
