@@ -1,2 +1,1 @@
-# aprendendo-ruby
-Praticando Ruby
+Praticando Ruby com Livro de Receitas!
