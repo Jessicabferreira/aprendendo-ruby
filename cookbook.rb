@@ -1,11 +1,17 @@
+INSERIR_RECEITA = 1
+VISUALIZAR_RECEITAS = 2
+BUSCAR_RECEITAS = 3
+SAIR = 4
+
 def bem_vindo()
  puts "Bem vindo ao Cookbook, sua rede social de receitas!"
 end
 
 def menu()
-    puts "[1] Cadastrar uma receita"
-    puts "[2] Ver todas as receitas"
-    puts "[3] Sair"
+    puts "[#{INSERIR_RECEITA}] Cadastrar uma receita"
+    puts "[#{VISUALIZAR_RECEITAS}] Ver todas as receitas"
+    puts "[#{BUSCAR_RECEITAS}] Buscar receitas"
+    puts "[#{SAIR}] Sair"
 
     print "Escolha uma opçaõ: " 
     return gets.to_i()
