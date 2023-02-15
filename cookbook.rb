@@ -14,7 +14,7 @@ def menu()
     puts "[#{SAIR}] Sair"
 
     print "Escolha uma opçaõ: " 
-    return gets.to_i()
+    return gets.to_i()11
 end
 
 def inserir_receita() 
@@ -22,7 +22,6 @@ def inserir_receita()
     nome = gets.chomp()
     puts "Digite o tipo da receita: "
     tipo = gets.chomp()
-
     puts
     puts "Receita #{nome} cadastrada com sucesso!"
     puts
@@ -32,9 +31,8 @@ end
 def imprimir_receitas(receitas)
     puts "========== Receitas cadastradas =========="
     receitas.each do |receita|
-    puts "#{receita[:nome]} - #{receita[:tipo]}"
+      puts "#{receita[:nome]} - #{receita[:tipo]}"
     end
-    puts
 end
 
 bem_vindo()
@@ -43,11 +41,13 @@ receitas = []
 
 opcao = menu()
 
-while(opcao != 3) do
-  if(opcao == 1)
-  receitas << inserir_receita()
-  elsif(opcao == 2)
+loop do
+  if(opcao == INSERIR_RECEITA)
+    receitas << inserir_receita()
+  elsif(opcao == VISUALIZAR_RECEITAS)
     imprimir_receitas(receitas)
+  elsif(opcao == SAIR)
+    break
   else
     puts "Opção inválida"
 end
@@ -55,4 +55,5 @@ end
 opcao = menu()
 end 
 
+puts
 puts "Obrigado por usar o Cookbook, até logo"
