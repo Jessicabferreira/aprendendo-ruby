@@ -14,7 +14,7 @@ def menu()
     puts "[#{SAIR}] Sair"
 
     print "Escolha uma opçaõ: " 
-    return gets.to_i()11
+    return gets.to_i()
 end
 
 def inserir_receita() 
