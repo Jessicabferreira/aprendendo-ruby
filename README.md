@@ -1,2 +1,4 @@
-Praticando Ruby com Livro de Receitas!
+Praticando Ruby! 
 
+Projeto 1, Livro de Receitas!
+Projeto 2, Cadastrar uma Conta!
