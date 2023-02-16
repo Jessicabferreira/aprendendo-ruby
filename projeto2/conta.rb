@@ -10,9 +10,18 @@ class Conta
 
     def sacar(valor)
         if saldo >= valor
-            self.saldo -= valor
+          self.saldo -= valor
         else
           puts "Não foi possivel executar o saque"
         end
     end
-    
+
+    def depositar(valor)
+        self.saldo += valor
+    end
+
+    def transferir(conta_destino, valor)
+        sacar(valor)
+        conta_destino.depositar(valor)
+    end
+end
